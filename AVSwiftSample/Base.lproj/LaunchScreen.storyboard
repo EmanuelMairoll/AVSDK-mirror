@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cOY-PG-gUp">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Authentic Vision SDK-->
+        <scene sceneID="YTh-Ky-AYu">
+            <objects>
+                <tableViewController id="MH9-Jj-HD3" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="2K6-53-vqt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="MH9-Jj-HD3" id="Ugl-IP-Cwt"/>
+                            <outlet property="delegate" destination="MH9-Jj-HD3" id="JL4-Fb-r6h"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Authentic Vision SDK" id="s3I-v8-eLd"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="faR-1b-rgz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-575" y="254"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tt8-WU-l4J">
+            <objects>
+                <navigationController id="cOY-PG-gUp" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="svf-6k-vx0">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MH9-Jj-HD3" kind="relationship" relationship="rootViewController" id="uyJ-sb-mWf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cKq-C7-aiJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1482" y="254"/>
+        </scene>
+    </scenes>
+</document>
