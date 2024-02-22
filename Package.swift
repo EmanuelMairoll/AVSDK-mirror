@@ -14,10 +14,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AuthenticVisionSDK",
-            url: "https://github.com/authenticvision/mobile-sdk-ios/releases/download/v\(version)/AuthenticVisionSDK.xcframework.zip",
+            url: "https://github.com/EmanuelMairoll/AVSDK-mirror/releases/download/v\(version)/AuthenticVisionSDK.xcframework.zip",
             checksum: checksum
         )
     ]
 )
-
-
