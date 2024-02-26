@@ -14,7 +14,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AuthenticVisionSDK",
-            url: "https://github.com/EmanuelMairoll/AVSDK-mirror/releases/download/v\(version)/AuthenticVisionSDK.xcframework.zip",
+            url: "https://github.com/EmanuelMairoll/AVSDK-mirror/releases/download/v8.2.3/AuthenticVisionSDK.xcframework.zip",
             checksum: checksum
         )
     ]

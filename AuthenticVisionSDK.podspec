@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
 DESC
   s.homepage         = 'https://github.com/EmanuelMairoll/AVSDK-mirror'
   s.author           = { 'Your Name' => 'support@authenticvision.com' }
-  s.source           = { :http => "https://github.com/EmanuelMairoll/AVSDK-mirror/releases/download/v#{s.version}/AuthenticVisionSDK.xcframework.zip" }
+  s.source           = { :http => 'https://github.com/EmanuelMairoll/AVSDK-mirror/releases/download/v8.2.3/AuthenticVisionSDK.xcframework.zip' }
 
   s.platform     = :ios, '12.0'
   s.ios.deployment_target = '12.0'
