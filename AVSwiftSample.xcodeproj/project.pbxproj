@@ -9,28 +9,13 @@
 /* Begin PBXBuildFile section */
 		11250AC42ADD794600DF24B5 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11250AC32ADD794600DF24B5 /* NavigationController.swift */; };
 		731FD1AE2B162B240049C678 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 731FD1AD2B162B240049C678 /* Localizable.xcstrings */; };
+		88DE83F42B9B19080009A876 /* AuthenticVisionSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 88DE83F32B9B19080009A876 /* AuthenticVisionSDK */; };
 		A7B9269E24A625EF006AA85B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B9269D24A625EF006AA85B /* AppDelegate.swift */; };
 		A7B926A524A625EF006AA85B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7B926A324A625EF006AA85B /* Main.storyboard */; };
 		A7B926A724A625F5006AA85B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7B926A624A625F5006AA85B /* Assets.xcassets */; };
 		A7B926AA24A625F5006AA85B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7B926A824A625F5006AA85B /* LaunchScreen.storyboard */; };
-		A7B926B324A62672006AA85B /* AuthenticVisionSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B926B224A62672006AA85B /* AuthenticVisionSDK.xcframework */; };
-		A7B926B424A62672006AA85B /* AuthenticVisionSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7B926B224A62672006AA85B /* AuthenticVisionSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A7B926B724A62C2E006AA85B /* DemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B926B624A62C2E006AA85B /* DemoTableViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		A7B926B524A62672006AA85B /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				A7B926B424A62672006AA85B /* AuthenticVisionSDK.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		11250AC32ADD794600DF24B5 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
@@ -41,7 +26,7 @@
 		A7B926A624A625F5006AA85B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7B926A924A625F5006AA85B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7B926AB24A625F5006AA85B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7B926B224A62672006AA85B /* AuthenticVisionSDK.xcframework */ = {isa = PBXFileReference; isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AuthenticVisionSDK.xcframework; path = Frameworks/AuthenticVisionSDK.xcframework; sourceTree = "<group>"; };
+		A7B926B224A62672006AA85B /* AuthenticVisionSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AuthenticVisionSDK.xcframework; path = Frameworks/AuthenticVisionSDK.xcframework; sourceTree = "<group>"; };
 		A7B926B624A62C2E006AA85B /* DemoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7B926B324A62672006AA85B /* AuthenticVisionSDK.xcframework in Frameworks */,
+				88DE83F42B9B19080009A876 /* AuthenticVisionSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,13 +100,15 @@
 				A7B9269624A625EF006AA85B /* Sources */,
 				A7B9269724A625EF006AA85B /* Frameworks */,
 				A7B9269824A625EF006AA85B /* Resources */,
-				A7B926B524A62672006AA85B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = AVSwiftSample;
+			packageProductDependencies = (
+				88DE83F32B9B19080009A876 /* AuthenticVisionSDK */,
+			);
 			productName = AVSwiftSample;
 			productReference = A7B9269A24A625EF006AA85B /* AVSwiftSample.app */;
 			productType = "com.apple.product-type.application";
@@ -159,6 +146,9 @@
 				es,
 			);
 			mainGroup = A7B9269124A625EF006AA85B;
+			packageReferences = (
+				88DE83F22B9B19080009A876 /* XCRemoteSwiftPackageReference "AVSDK-mirror" */,
+			);
 			productRefGroup = A7B9269B24A625EF006AA85B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -416,6 +406,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		88DE83F22B9B19080009A876 /* XCRemoteSwiftPackageReference "AVSDK-mirror" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/EmanuelMairoll/AVSDK-mirror";
+			requirement = {
+				kind = exactVersion;
+				version = 8.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		88DE83F32B9B19080009A876 /* AuthenticVisionSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88DE83F22B9B19080009A876 /* XCRemoteSwiftPackageReference "AVSDK-mirror" */;
+			productName = AuthenticVisionSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A7B9269224A625EF006AA85B /* Project object */;
 }
