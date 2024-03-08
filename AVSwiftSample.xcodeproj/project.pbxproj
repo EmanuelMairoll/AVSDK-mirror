@@ -147,7 +147,7 @@
 			);
 			mainGroup = A7B9269124A625EF006AA85B;
 			packageReferences = (
-				88DE83F22B9B19080009A876 /* XCRemoteSwiftPackageReference "AVSDK-mirror" */,
+				88DE83F22B9B19080009A876 /* XCRemoteSwiftPackageReference "AVSDK" */,
 			);
 			productRefGroup = A7B9269B24A625EF006AA85B /* Products */;
 			projectDirPath = "";
@@ -339,10 +339,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 232HF5LRX3;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
-				);
 				INFOPLIST_FILE = AVSwiftSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -365,10 +361,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 232HF5LRX3;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
-				);
 				INFOPLIST_FILE = AVSwiftSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -408,7 +400,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		88DE83F22B9B19080009A876 /* XCRemoteSwiftPackageReference "AVSDK-mirror" */ = {
+		88DE83F22B9B19080009A876 /* XCRemoteSwiftPackageReference "AVSDK" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/EmanuelMairoll/AVSDK-mirror";
 			requirement = {
@@ -421,7 +413,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		88DE83F32B9B19080009A876 /* AuthenticVisionSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 88DE83F22B9B19080009A876 /* XCRemoteSwiftPackageReference "AVSDK-mirror" */;
+			package = 88DE83F22B9B19080009A876 /* XCRemoteSwiftPackageReference "AVSDK" */;
 			productName = AuthenticVisionSDK;
 		};
 /* End XCSwiftPackageProductDependency section */

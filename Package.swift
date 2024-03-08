@@ -12,7 +12,7 @@ let package = Package(
     products: [
         .library(
             name: "AuthenticVisionSDK",
-            targets: ["AuthenticVisionSDK"]),
+            targets: ["AuthenticVisionSDK"])
     ],
     targets: [
         .binaryTarget(
